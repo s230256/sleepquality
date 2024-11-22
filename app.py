@@ -13,7 +13,7 @@ st.write(' - 기계학습 알고리즘 : 선형회귀 ')
 st.write(' - 학습 데이터 출처 : https://www.kaggle.com/datasets/arsalanjamal002/student-sleep-patterns')
 st.write(' - 훈련    데이터 : 350건')
 st.write(' - 테스트 데이터 : 150건')
-st.write(' - 인공지능 모델 정확도 : ')
+st.write(' - 인공지능 모델 정확도 : -0.03')
 
 # 3.데이터 시각화
 col1, col2 = st.columns(2)  
@@ -33,8 +33,8 @@ a = st.number_input(' 나이 입력 ', value=0)      #초기값은 0
 b = st.number_input(' 평균 수면 시간 입력 ', value=0.0 )     # 초기값은 0.0
 c = st.number_input(' 평균 공부 시간 입력 ', value=0.0 )     # 초기값은 0.0
 d = st.number_input(' 전자기기 사용시간 입력 ', value=0)      #초기값은 0
-e = st.number_input(' 카페인 섭취량 입력 ', value=0.0 )     # 초기값은 0.0
-f = st.number_input(' 신체 활동량 입력 ', value=0.0 )     # 초기값은 0.0
+e = st.number_input(' 카페인 섭취량 입력 (@잔) ', value=0.0 )     # 초기값은 0.0
+f = st.number_input(' 신체 활동시간 입력 (분) ', value=0.0 )     # 초기값은 0.0
 
 if st.button('결과 확인하기'):            # 사용자가 '점수예측' 버튼을 누르면
         input_data = [[a,b,c,d,e,f]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
